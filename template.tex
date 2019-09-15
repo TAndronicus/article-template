@@ -1,5 +1,7 @@
 \documentclass{article}
 
+\usepackage{lipsum}
+
 \begin{document}
 
     \title{Template for articles}
@@ -10,27 +12,31 @@
     \maketitle
 
     \begin{abstract}
-        Lorem ipsum
+        \lipsum[1]\cite{exBook}
 %        \keywords{template \and article}
     \end{abstract}
 
-    \section{Introduction}
-    Lorem
-    \section{Related works}
-    ipsum
-    \section{Proposed method}
-    Loe
+    \section{Introduction}\label{sec:introduction}
+    \lipsum[2]
 
-    \section{Experimental Setup}
-    ipsum
-    \section{Results and Discussion}
-    Lorem
-    \section{Conclusion}
-    ipsuym
+    \section{Related works}\label{sec:related-works}
+    \lipsum[3]
+
+    \section{Proposed method}\label{sec:proposed-method}
+    \lipsum[4]
+
+    \section{Experimental Setup}\label{sec:experimental-setup}
+    \lipsum[5]
+
+    \section{Results and Discussion}\label{sec:results-and-discussion}
+    \lipsum[6]
+
+    \section{Conclusion}\label{sec:conclusion}
+    \lipsum[7]
 
     \textbf{Acknowledgments.} This work was supported in part by the National Science Centre, Poland under the grant no. 2017/25/B/ST6/01750.
 
-%    \bibliographystyle{plain}
-%    \bibliography{dtd}
+    \bibliographystyle{plain}
+    \bibliography{bibliography}
 
 \end{document}
